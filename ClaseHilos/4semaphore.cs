@@ -12,7 +12,7 @@
             Console.WriteLine($"{Thread.CurrentThread.Name} Saliendo");
             semaphore.Release();
         }
-        internal static void Excecute()
+        internal static void Execute()
         {
             Thread task1 = new Thread(HolaUAP);
             task1.Name = "Hilo 1";
@@ -23,7 +23,7 @@
             Thread task4 = new Thread(HolaUAP);
             task4.Name = "Hilo 4";
 
-            //Excecute all tasks
+            //Execute all tasks
             task1.Start();
             task2.Start();
             task3.Start();

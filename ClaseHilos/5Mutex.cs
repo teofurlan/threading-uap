@@ -7,12 +7,12 @@
         {
             Console.WriteLine($"{Thread.CurrentThread.Name} en Fila");
             mutex.WaitOne();
-            Console.WriteLine($"{Thread.CurrentThread.Name} en atencion");
+            Console.WriteLine($"{Thread.CurrentThread.Name} en atención");
             Thread.Sleep(3000);
             Console.WriteLine($"{Thread.CurrentThread.Name} Saliendo");
             mutex.ReleaseMutex();
         }
-        internal static void Excecute()
+        internal static void Execute()
         {
             Thread task1 = new Thread(HolaUAP);
             task1.Name = "Hilo 1";
@@ -23,7 +23,7 @@
             Thread task4 = new Thread(HolaUAP);
             task4.Name = "Hilo 4";
 
-            //Excecute all tasks
+            //Execute all tasks
             task1.Start();
             task2.Start();
             task3.Start();

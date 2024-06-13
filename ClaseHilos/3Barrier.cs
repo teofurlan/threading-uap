@@ -18,7 +18,7 @@
             Console.WriteLine("Hola desde " + Thread.CurrentThread.Name);
         }
 
-        internal static void Excecute()
+        internal static void Execute()
         {
             Thread task1 = new Thread(HolaUAP);
             task1.Name = "Hilo 1";
@@ -28,7 +28,7 @@
 
             Thread task3 = new Thread(() => Console.WriteLine("InlineAction"));
 
-            //Excecute all tasks
+            //Execute all tasks
             task1.Start();
             task2.Start();
             task3.Start();

@@ -1,22 +1,26 @@
 ﻿using ClaseHilos;
 
 //1 - Uso basico de hilos con Threads
-//_1Basico.Excecute();
+//_1Basico.Execute();
 
 //2 - Uso de hilos con ThreadPool
-//_2ThreadPool.Excecute();
+//_2ThreadPool.Execute();
 
 //3- Uso de Barrier
-//_3Barrier.Excecute();
+// _3Barrier.Execute();
 
 //4- Uso de Semaphore
-//_4semaphore.Excecute();
+//_4semaphore.Execute();
 
 //5- Uso de Mutex
-//_5Mutex.Excecute();
+// _5Mutex.Execute();
 
 //6- Uso de lock
-_6lock.Excecute();
+// _6lock.Execute();
+
+// Solución
+Solution.Execute();
+
 
 
 

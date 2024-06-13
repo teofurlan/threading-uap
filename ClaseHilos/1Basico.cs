@@ -8,7 +8,7 @@
             Console.WriteLine("Hola desde" + Thread.CurrentThread.Name);
         }
 
-        internal static void Excecute()
+        internal static void Execute()
         {
             Thread hilo = new Thread(new ThreadStart(HolaUAP));
             hilo.Name = "Hilo 1";

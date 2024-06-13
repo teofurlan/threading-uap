@@ -9,7 +9,7 @@
             Console.WriteLine("Hola desde " + id);
         }
 
-        internal static void Excecute()
+        internal static void Execute()
         {
             for (int i = 0; i < 5; i++)
             {
